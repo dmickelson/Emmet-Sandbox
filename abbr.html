@@ -1,116 +1,305 @@
-<!-- BASIC TAGS, CLASSES & IDS -->
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Emmet Samples</title>
+</head>
+<body>
+
+
+
+<h1>Emmet For Faster HTML & CSS Workflow</h1>
+<h3> Emmet Cheat Sheet </h3>
+<p>
+  <a href="https://docs.emmet.io/cheat-sheet/"> https://docs.emmet.io/cheat-sheet/</a>
+  <br>
+<a href="https://github.com/emmetio/emmet/blob/master/lib/snippets.json"> https://github.com/emmetio/emmet/blob...</a>
+</p>
+
+
+<h2>BASIC TAGS, CLASSES & IDS</h2>
+
+<xmp>
 <!-- div -->
-
+<div></div>
 <!-- h1 -->
-
+<h1></h1>
 <!-- Common Shortcuts bq hdr ftr btn -->
+<blockquote></blockquote>
+<header></header>
+<footer></footer>
+
+
 
 <!-- h1.myheading -->
+<h1 class="myheading"></h1>
 
 <!-- div.myclass OR .myclass -->
+<div class="myclass"></div>
+<div class="myclass"></div>
 
 <!-- .class1.class2 -->
+<div class="class1 class2"></div>
 
 <!-- div#myid or #myid -->
+<div id="myid"></div>
 
 <!-- #myid.myclass -->
+<div id="myid" class="myclass"></div>
+<div id="myid" class="class1 class2"></div>
+</xmp>
 
+<h2>ADDING CONTENT <em>{}</em> </h2>
 
-<!-- ADDING CONTENT {} -->
-
+<xmp>
 <!-- h1{My Title} -->
+<h1>My Title</h1>
 
 <!-- h1.red{My Red Title} -->
+<h1 class="red">My Red Title</h1>
+</xmp>
 
-<!-- p>{Click }+a{here}+{ to continue} -->
+<h2>NESTING <em>></em></h2>
 
-<!-- NESTING -->
-
+<xmp>
 <!-- div>ul>li -->
+<div>
+  <ul>
+    <li></li>
+  </ul>
+</div>
+
 
 <!-- div>ul>li{List Item 1} -->
+<div>
+  <ul>
+    <li>List Item 1</li>
+  </ul>
+</div>
 
+</xmp>
 
+<h2>MULTIPLICATION <em>*</em></h2>
 
-
-<!-- MULTIPLICATION * -->
-
+<xmp>
 <!-- ul#navigation>li*5>{List Item 1} -->
+<ul>
+  <li>List Item 1</li>
+  <li>List Item 1</li>
+  <li>List Item 1</li>
+  <li>List Item 1</li>
+  <li>List Item 1</li>
+</ul>
 
+<!-- ul#navigation>li*5>{List Item $} -->
+<ul id="navigation">
+  <li>List Item 1</li>
+  <li>List Item 2</li>
+  <li>List Item 3</li>
+  <li>List Item 4</li>
+  <li>List Item 5</li>
+</ul>
+</xmp>
 
+<h2>SIBLINGS <em>+</em></h2>
 
-<!-- SIBLINGS + -->
-
+<xmp>
 <!-- div+ul+li -->
+<div></div>
+<ul></ul>
+<li></li>
 
 <!-- h1.title+p.body -->
+<h1 class="title"></h1>
+<p class="body"></p>
 
 <!-- div>h1.title+p.body -->
+<div>
+  <h1 class="title"></h1>
+  <p class="body"></p>
+</div>
 
+</xmp>
 
-<!-- GROUPIONG () -->
+<h2>GROUPIONG <em>()</em></h2>
 
+<xmp>
 <!-- div>(header>ul>li*2>a)+footer>p -->
+<div>
+  <header>
+    <ul>
+      <li><a href=""></a></li>
+      <li><a href=""></a></li>
+    </ul>
+  </header>
+  <footer>
+    <p></p>
+  </footer>
+</div>
 
+</xmp>
 
-<!-- ATTRIBUTES -->
+<h2>ATTRIBUTES</h2>
 
+<xmp>
 <!-- a[href="http://google.com" target="_blank"] -->
+<a href="http:google.com" targer="_blank" title="Google"></a>
+</xmp>
 
-
-
-<!-- FORMS & INPUT -->
-
+<h2>FORMS & INPUT</h2>
+<xmp>
 <!-- form -->
+<form action=""></form>
 
 <!-- form:get -->
-
+<form action="" method="get"></form>
 <!-- form:post -->
-
+<form action="" method="post"></form>
 <!-- label -->
-
+<label for=""></label>
 <!-- input -->
-
+<input type="text">
 <!-- inp -->
-
+<input type="text" name="" id="">
 <!-- input:email -->
-
+<input type="email" name="" id="">
 <!-- input:s -->
-
+<input type="submit" value="">
 <!-- select -->
+<select name="" id=""></select>
+</xmp>
 
+<h2>EXTENDED STRUCTURE <em>+</em></h2>
 
-
-<!-- EXTENDED STRUCTURE + -->
-
+<xmp>
 <!-- select+ -->
+<select name="" id="">
+  <option value=""></option>
+</select>
 
 <!-- table+ -->
+<table>
+  <tr>
+    <td></td>
+  </tr>
+</table>
 
 <!-- ol+ -->
+<ol>
+  <li></li>
+</ol>
 
 <!-- ul+ -->
+<ul>
+  <li></li>
+</ul>
+
+</xmp>
+
+<h2>CUSTOM ALIASES edit snippets.json file</h2>
+
+<p>Location of snippits.json file</p>
+<p>C:\Users\dmickelson\.atom\packages\emmet\node_modules\emmet\lib\snippets.json</p>
 
 
-
-
-<!-- CUSTOM ALIASES edit snippets.json file -->
 
 <!-- post -->
 
-<!-- DOCTYPE AND STRUCTURE -->
-
+<h2>DOCTYPE AND STRUCTURE</h2>
+<xmp>
 <!-- ! -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+</body>
+</html>
 
 <!-- html:5 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+</body>
+</html>
 
 <!-- html:4t -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <title>Document</title>
+</head>
+<body>
 
-<!-- LOREM IPSUM GENERATOR -->
+</body>
+</html>
 
+</xmp>
+
+<h2>LOREM IPSUM GENERATOR</h2>
+<xmp>
 <!-- lorem -->
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae repellendus non exercitationem blanditiis deserunt molestias laboriosam laudantium. Iste, atque quos repellat sapiente at! Vel quod facere, corrupti perferendis suscipit exercitationem.
 
 <!-- lorem10 -->
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, similique.
 
-<!-- ul.mylist>lorem10.item*4 -->
+<!-- ul.mylist>lorem10.myclass*4 -->>
+<ul class="mylist">
+  <li class="myclass">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, necessitatibus.</li>
+  <li class="myclass">Animi fugit accusamus nihil neque, porro itaque cupiditate ratione sequi?</li>
+  <li class="myclass">Quibusdam officia dicta, illo ipsum vero animi nihil! Nemo, reprehenderit!</li>
+  <li class="myclass">Odio incidunt quas libero voluptate dolorem cupiditate praesentium consectetur, labore.</li>
+</ul>
+
+</xmp>
+
+<h2>Actions</h2>
+
+<xmp>
+<!-- TOGGLE COMMENTS -->
+<!-- ctrl + / -->
+
+<!-- GOTO MATCHING PAIR -->
+<!-- ctrl + alt + j -->
+
+<!-- SELECT THROUGH ITEMS -->
+<!-- ctrl + shift + . -->
+<!-- ctrl + shift + , -->
+
+<!-- MOVE THINGS -->
+<!-- ctrl up or down -->
+
+<!-- MERGE LINES -->
+<!-- shift + ctrl + m -->
+
+<!-- INCREMEMNT -->
+<!-- .1 - alt + up/down -->
+<!--  1 - shift + ctrl + up/down -->
+<!--  10 - shift + alt + up/down -->
+
+<!-- MATH EXPRESSIONS -->
+<!-- ctrl + shift + y -->
+
+</xmp>
+
+
+
+</body>
+</html>
